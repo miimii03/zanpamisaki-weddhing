@@ -1,0 +1,38 @@
+
+  $main-color: #bbad80;
+  $accent-color: #557788;
+  $background-color: #f6f1e7;
+  $english: 'Parisienne','ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+
+  @mixin center-bottom($bottom) {
+    text-align: center;
+    margin-bottom: $bottom;
+  }
+
+  @mixin hall-main() {
+    display: flex;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: cover;
+    margin: 0 100px 200px 100px;
+  }
+
+  @mixin plan-bg-img {
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 500px;
+    background-size: cover;
+    margin-bottom: 200px;
+  }
+  
+  @mixin flex-between() {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @mixin flex-between-bottom($bottom) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $bottom;
+  }

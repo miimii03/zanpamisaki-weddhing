@@ -1,0 +1,1987 @@
+@charset "UTF-8";
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  font-size: 16px;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+}
+
+.back-top a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #bbad80;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.85);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+}
+
+header .nav-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-all p {
+  color: #557788;
+}
+
+header .nav-all .hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav-all .logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+header .nav-all .nav-sub {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-all .nav-sub .nav-sub-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-all .nav-sub .nav-sub-left li {
+  line-height: 60px;
+}
+
+header .nav-all .nav-sub .nav-sub-left i {
+  font-size: 30px;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+header .nav-all .nav-sub .nav-sub-left a {
+  text-decoration: none;
+  color: #bbad80;
+  margin-right: 15px;
+}
+
+header .nav-all .nav-sub .nav-sub-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .nav-all .nav-sub .nav-sub-right .fair {
+  background-color: #557788;
+  width: 100px;
+  text-align: center;
+  line-height: 60px;
+}
+
+header .nav-all .nav-sub .nav-sub-right .contact {
+  background-color: #bbad80;
+  width: 130px;
+  text-align: center;
+  line-height: 60px;
+}
+
+header .nav-all .nav-sub .nav-sub-right a {
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.hamburger-nav {
+  background-image: url(../images/hamburger-img.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+.hamburger-nav ul {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hamburger-nav ul .hamburger-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hamburger-nav ul .hamburger-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hamburger-nav ul li {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hamburger-nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #bbad80;
+  line-height: 1.6;
+}
+
+.hamburger-nav ul li .hamburger-english {
+  font-family: "Parisienne", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-size: 20px;
+}
+
+.hamburger-nav ul li .hamburger-ja {
+  color: #557788;
+}
+
+.hamburger-nav ul li:hover {
+  background-color: #f6f1e7;
+}
+
+#home main .home-header-image img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 300px;
+}
+
+#ceremony-style main .home-header-image img,
+#events main .home-header-image img,
+#hall main .home-header-image img,
+#hall-precious main .home-header-image img,
+#hall-royal main .home-header-image img,
+#hall-rafale main .home-header-image img,
+#plan main .home-header-image img,
+#plan-choose main .home-header-image img,
+#plan-small main .home-header-image img,
+#plan-reception main .home-header-image img,
+#plan-yuinou main .home-header-image img,
+#plan-propose main .home-header-image img,
+#items main .home-header-image img,
+#cuisine main .home-header-image img,
+#photo main .home-header-image img,
+#access main .home-header-image img,
+#contact main .home-header-image img,
+#thanks main .home-header-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 100px;
+}
+
+main .midashi-english {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Parisienne", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #bbad80;
+}
+
+main .button {
+  background-color: #bbad80;
+  width: 400px;
+  height: 50px;
+  margin: 0 auto 0 auto;
+}
+
+main .button a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+
+main .number-of-people {
+  font-size: 20px;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #bbad80;
+  color: #bbad80;
+  margin: 0 auto 30px auto;
+  font-weight: bold;
+}
+
+#home .button:hover,
+#ceremony-style .button:hover,
+#events .button:hover,
+#plan-choose .button:hover,
+#plan-small .button:hover,
+#plan-reception .button:hover,
+#plan-yuinou .button:hover,
+#plan-propose .button:hover,
+#items .button:hover,
+#cuisine .button:hover,
+#photo .button:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#hall .button:hover,
+#hall-precious .button:hover,
+#hall-royal .button:hover,
+#hall-rafale .button:hover,
+#plan .button:hover {
+  background-color: #DCD3B5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home main h2 {
+  font-size: 40px;
+}
+
+#home main h3 {
+  text-align: center;
+}
+
+#home main .button {
+  margin-bottom: 200px;
+}
+
+#home main .home-header-text {
+  text-align: center;
+  height: 737px;
+  background-image: url(../images/home-bg-text.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#home main .home-header-text h1 {
+  font-size: 30px;
+  color: #bbad80;
+  margin-bottom: 55px;
+}
+
+#home main .home-header-text .top {
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+#home main .home-header-text .under {
+  margin-bottom: 380px;
+  line-height: 1.6;
+}
+
+#home main .home-ceremony-style h3 {
+  margin-bottom: 60px;
+}
+
+#home main .home-ceremony-style ul {
+  width: 1340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin: 0 auto 70px auto;
+}
+
+#home main .home-ceremony-style ul img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home main .home-ceremony-style ul img:hover {
+  opacity: 0.5;
+}
+
+#home main .home-events {
+  background-image: url(../images/home-bg-events.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: 450px;
+}
+
+#home main .home-events h2 {
+  margin-top: 80px;
+}
+
+#home main .home-events h3 {
+  margin-bottom: 70px;
+}
+
+#home main .home-events ul {
+  width: 860px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 90px auto;
+}
+
+#home main .home-events ul li {
+  list-style-type: none;
+}
+
+#home main .home-events ul li a:hover {
+  opacity: 0.7;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home main .home-bg {
+  background-image: url(../images/home-bg-color.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  margin-bottom: 450px;
+  height: 644px;
+}
+
+#home main .home-bg .home-content-image {
+  max-width: 1130px;
+  /* 最大幅 */
+  min-width: 300px;
+  /* 最小幅 */
+}
+
+#home main .home-bg .home-content-image img {
+  width: 100%;
+  height: 480px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#home main .home-bg .home-hall,
+#home main .home-bg .home-plan,
+#home main .home-bg .home-items,
+#home main .home-bg .home-cuisine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -300px;
+}
+
+#home main .home-bg .home-hall .home-flex,
+#home main .home-bg .home-plan .home-flex,
+#home main .home-bg .home-items .home-flex,
+#home main .home-bg .home-cuisine .home-flex {
+  margin: auto auto;
+}
+
+#home main .home-bg .home-hall .home-flex h2,
+#home main .home-bg .home-plan .home-flex h2,
+#home main .home-bg .home-items .home-flex h2,
+#home main .home-bg .home-cuisine .home-flex h2 {
+  margin-top: 257px;
+}
+
+#home main .home-bg .home-hall .home-flex h3,
+#home main .home-bg .home-plan .home-flex h3,
+#home main .home-bg .home-items .home-flex h3,
+#home main .home-bg .home-cuisine .home-flex h3 {
+  margin-bottom: 40px;
+}
+
+#home main .home-photo {
+  margin: 0 auto 300px auto;
+  width: 1000px;
+}
+
+#home main .home-photo h3 {
+  margin-bottom: 70px;
+}
+
+#home main .home-photo .home-photo-gallery-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#home main .home-photo .home-photo-gallery-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+#ceremony-style main h2 {
+  font-size: 40px;
+}
+
+#ceremony-style main h3,
+#ceremony-style main h4,
+#ceremony-style main h5,
+#ceremony-style main .ceremony-style-text-top {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+#ceremony-style main h5 {
+  margin-top: 70px;
+}
+
+#ceremony-style main .ceremony-style-text-bottom {
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+#ceremony-style main h4 {
+  font-size: 30px;
+}
+
+#ceremony-style main .ceremony-style-list {
+  margin-bottom: 300px;
+}
+
+#ceremony-style main .ceremony-style-list img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#ceremony-style main .ceremony-style-list img:hover {
+  opacity: 0.5;
+}
+
+#ceremony-style main .ceremony-style-list h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#ceremony-style main .ceremony-style-list h3 {
+  margin-bottom: 70px;
+}
+
+#ceremony-style main .ceremony-style-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1340px;
+  margin: 0 auto;
+}
+
+#ceremony-style main .ceremony-style-list ul li {
+  list-style-type: none;
+}
+
+#ceremony-style main .ceremony-flex-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 520px;
+}
+
+#ceremony-style main .ceremony-flex-right .ceremony-two-image-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 620px;
+  margin: 60px 60px 50px 20px;
+}
+
+#ceremony-style main .ceremony-flex-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 520px;
+}
+
+#ceremony-style main .ceremony-flex-left .ceremony-two-image-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 620px;
+  margin: 60px 20px 50px 60px;
+}
+
+#ceremony-style main .ceremony-flex-image-big {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#ceremony-style main .ceremony-style-chapel,
+#ceremony-style main .ceremony-style-shinto,
+#ceremony-style main .ceremony-style-garden {
+  margin-bottom: 230px;
+  overflow: hidden;
+}
+
+#ceremony-style main .ceremony-style-beach {
+  margin-bottom: 300px;
+}
+
+#events main img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#events main h1 {
+  font-size: 50px;
+}
+
+#events main h3 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+#events main h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#events main h2 {
+  text-align: center;
+  margin-bottom: 60px;
+  font-size: 30px;
+  color: #bbad80;
+}
+
+#events main p {
+  text-align: center;
+  width: 600px;
+}
+
+#events main .events-bg {
+  background-image: url(../images/home-bg-color.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+  margin-bottom: 200px;
+  height: 651px;
+}
+
+#events main .events-text-top {
+  margin-bottom: 30px;
+}
+
+#events main .events-kengaku {
+  padding-top: 70px;
+  width: 1334px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#events main .events-kengaku .events-kengkau-text {
+  margin: 80px auto auto 100px;
+  line-height: 1.6;
+}
+
+#events main .events-yuinou {
+  padding-top: 70px;
+  width: 1334px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#events main .events-yuinou .events-yuinou-text {
+  margin: 80px 100px auto auto;
+  line-height: 1.6;
+}
+
+#hall main h1 {
+  font-size: 50px;
+}
+
+#hall main h3 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#hall main h2 {
+  font-size: 40px;
+  color: #557788;
+  margin-bottom: 30px;
+}
+
+#hall main p {
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+#hall main .hall-precious {
+  background-image: url(../images/hall-bg-precious.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 100px 200px 100px;
+}
+
+#hall main .hall-royal {
+  background-image: url(../images/hall-bg-royal.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 100px 200px 100px;
+}
+
+#hall main .hall-rafale {
+  background-image: url(../images/hall-bg-rafale.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 100px 200px 100px;
+}
+
+#hall main .hall-flex-right {
+  width: 540px;
+  text-align: center;
+  margin-top: 70px;
+  margin-right: 40px;
+  margin-left: 300px;
+}
+
+#hall main .hall-flex-left {
+  width: 540px;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 40px;
+  margin-right: 300px;
+}
+
+#hall main .button {
+  margin-top: 450px;
+}
+
+#hall main .hall-small-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 430px;
+  margin: 0 auto;
+}
+
+.holl-content main h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: #557788;
+}
+
+.holl-content main h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.holl-content main h3 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+
+.holl-content main .number-of-people {
+  margin-bottom: 40px;
+}
+
+.holl-content main .hall-presious-text-top {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.holl-content main .hall-presious-text-bottom {
+  text-align: center;
+  margin-bottom: 60px;
+  line-height: 1.6;
+}
+
+.holl-content main .hall-main-image {
+  width: 1200px;
+  margin: 0 auto 100px auto;
+}
+
+.holl-content main .hall-main-image .hall-main-image-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.holl-content main .hall-main-image .hall-main-image-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.holl-content main .hall-main-charm {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 300px;
+}
+
+.holl-content main .hall-main-charm h2 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-size: 40px;
+  color: #bbad80;
+  margin-top: 70px;
+}
+
+.holl-content main .hall-main-charm .hall-main-charm-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 100px auto;
+}
+
+.holl-content main .hall-main-charm .hall-main-charm-inner h5 {
+  font-size: 30px;
+}
+
+.holl-content main .hall-main-charm .hall-main-charm-inner img {
+  margin-bottom: 15px;
+}
+
+.holl-content main .hall-main-charm .hall-main-charm-inner p {
+  text-align: center;
+  line-height: 1.6;
+}
+
+.holl-content main .hall-main-charm .button {
+  margin-bottom: 100px;
+}
+
+#hall-precious main .hall-main-charm {
+  background-image: url(../images/hall-precious-bg-charm.jpg);
+  background-attachment: fixed;
+}
+
+#hall-precious main .hall-main-charm-inner {
+  width: 1144px;
+}
+
+#hall-precious main .hall-main-charm-left h6,
+#hall-precious main .hall-main-charm-center h6 {
+  text-align: center;
+  margin-bottom: 94px;
+  color: #557788;
+}
+
+#hall-precious main .hall-main-charm-right h6 {
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #557788;
+}
+
+#hall-royal main .hall-main-charm {
+  background-image: url(../images/hall-royal-bg-charm.jpg);
+  background-attachment: fixed;
+}
+
+#hall-royal main .hall-main-charm-inner {
+  width: 746px;
+}
+
+#hall-royal main .hall-main-charm-left h6 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #557788;
+  line-height: 1.6;
+}
+
+#hall-royal main .hall-main-charm-right h6 {
+  text-align: center;
+  margin-bottom: 84px;
+  color: #557788;
+}
+
+#hall-rafale main .hall-main-charm {
+  background-image: url(../images/hall-rafale-bg-charm.jpg);
+  background-attachment: fixed;
+}
+
+#hall-rafale main .hall-main-charm-inner {
+  width: 756px;
+}
+
+#hall-rafale main .hall-main-charm-left h6 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #557788;
+  line-height: 1.6;
+}
+
+#hall-rafale main .hall-main-charm-right h6 {
+  text-align: center;
+  margin-bottom: 52px;
+  color: #557788;
+  line-height: 1.6;
+}
+
+#plan main h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#plan main h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#plan main .plan-choose {
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 200px;
+  background-image: url(../images/plan-choose-bg.jpg);
+}
+
+#plan main .plan-small {
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 200px;
+  background-image: url(../images/plan-small-bg.jpg);
+}
+
+#plan main .plan-reception {
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 200px;
+  background-image: url(../images/plan-reception-bg.jpg);
+}
+
+#plan main .plan-yuinou {
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 200px;
+  background-image: url(../images/plan-yuinou-bg.jpg);
+}
+
+#plan main .plan-propose {
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 500px;
+  background-size: cover;
+  margin-bottom: 200px;
+  background-image: url(../images/plan-propose-bg.jpg);
+}
+
+#plan main .plan-choose,
+#plan main .plan-reception,
+#plan main .plan-propose {
+  overflow: hidden;
+}
+
+#plan main .plan-choose .plan-content-inner,
+#plan main .plan-reception .plan-content-inner,
+#plan main .plan-propose .plan-content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+#plan main .plan-choose .plan-content-inner .plan-image-left,
+#plan main .plan-reception .plan-content-inner .plan-image-left,
+#plan main .plan-propose .plan-content-inner .plan-image-left {
+  margin-left: 200px;
+}
+
+#plan main .plan-choose .plan-content-inner .plan-text-right,
+#plan main .plan-reception .plan-content-inner .plan-text-right,
+#plan main .plan-propose .plan-content-inner .plan-text-right {
+  text-align: center;
+  height: 335px;
+  margin-left: 100px;
+}
+
+#plan main .plan-choose .plan-content-inner .plan-text-right h3,
+#plan main .plan-reception .plan-content-inner .plan-text-right h3,
+#plan main .plan-propose .plan-content-inner .plan-text-right h3 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #557788;
+}
+
+#plan main .plan-choose .plan-content-inner .plan-text-right h4,
+#plan main .plan-reception .plan-content-inner .plan-text-right h4,
+#plan main .plan-propose .plan-content-inner .plan-text-right h4 {
+  margin-bottom: 50px;
+}
+
+#plan main .plan-choose .plan-content-inner .plan-text-right .price,
+#plan main .plan-reception .plan-content-inner .plan-text-right .price,
+#plan main .plan-propose .plan-content-inner .plan-text-right .price {
+  font-size: 30px;
+}
+
+#plan main .plan-choose .plan-content-inner .plan-text-right .price-sub,
+#plan main .plan-reception .plan-content-inner .plan-text-right .price-sub,
+#plan main .plan-propose .plan-content-inner .plan-text-right .price-sub {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#plan main .plan-choose .plan-content-inner .plan-text-right .members,
+#plan main .plan-reception .plan-content-inner .plan-text-right .members,
+#plan main .plan-propose .plan-content-inner .plan-text-right .members {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+#plan main .plan-small,
+#plan main .plan-yuinou {
+  overflow: hidden;
+}
+
+#plan main .plan-small .plan-content-inner,
+#plan main .plan-yuinou .plan-content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 20px;
+}
+
+#plan main .plan-small .plan-content-inner .plan-image-right,
+#plan main .plan-yuinou .plan-content-inner .plan-image-right {
+  margin-right: 200px;
+}
+
+#plan main .plan-small .plan-content-inner .plan-text-left,
+#plan main .plan-yuinou .plan-content-inner .plan-text-left {
+  height: 335px;
+  margin-right: 165px;
+  text-align: center;
+}
+
+#plan main .plan-small .plan-content-inner .plan-text-left h3,
+#plan main .plan-yuinou .plan-content-inner .plan-text-left h3 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #557788;
+}
+
+#plan main .plan-small .plan-content-inner .plan-text-left h4,
+#plan main .plan-yuinou .plan-content-inner .plan-text-left h4 {
+  margin-bottom: 50px;
+}
+
+#plan main .plan-small .plan-content-inner .plan-text-left .price,
+#plan main .plan-yuinou .plan-content-inner .plan-text-left .price {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+#plan main .plan-small .plan-content-inner .plan-text-left .members,
+#plan main .plan-yuinou .plan-content-inner .plan-text-left .members {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+#plan main .plan-small .plan-content-inner .plan-text-left .plan-image-right,
+#plan main .plan-yuinou .plan-content-inner .plan-text-left .plan-image-right {
+  margin-right: 200px;
+}
+
+#plan main .plan-reception .price,
+#plan main .plan-propose .price {
+  margin-bottom: 50px;
+}
+
+#plan-choose main,
+#plan-small main,
+#plan-reception main,
+#plan-yuinou main,
+#plan-propose main {
+  text-align: center;
+}
+
+#plan-choose main span,
+#plan-small main span,
+#plan-reception main span,
+#plan-yuinou main span,
+#plan-propose main span {
+  font-weight: bold;
+  margin-right: 20px;
+  color: #557788;
+  font-size: 20px;
+  background-color: #f6f1e7;
+  padding: 5px 10px 5px 10px;
+}
+
+#plan-choose main h1,
+#plan-small main h1,
+#plan-reception main h1,
+#plan-yuinou main h1,
+#plan-propose main h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: #557788;
+}
+
+#plan-choose main h2,
+#plan-small main h2,
+#plan-reception main h2,
+#plan-yuinou main h2,
+#plan-propose main h2 {
+  font-size: 20px;
+  margin-bottom: 180px;
+}
+
+#plan-choose main h3,
+#plan-small main h3,
+#plan-reception main h3,
+#plan-yuinou main h3,
+#plan-propose main h3 {
+  margin: 0 auto 70px auto;
+  width: 500px;
+  font-size: 30px;
+  color: #bbad80;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+
+#plan-choose main .price,
+#plan-small main .price,
+#plan-reception main .price,
+#plan-yuinou main .price,
+#plan-propose main .price {
+  font-size: 25px;
+}
+
+#plan-choose main .price-sub,
+#plan-small main .price-sub,
+#plan-reception main .price-sub,
+#plan-yuinou main .price-sub,
+#plan-propose main .price-sub {
+  margin-bottom: 40px;
+}
+
+#plan-choose main .members,
+#plan-small main .members,
+#plan-reception main .members,
+#plan-yuinou main .members,
+#plan-propose main .members {
+  font-size: 25px;
+}
+
+#plan-choose main .place,
+#plan-small main .place,
+#plan-reception main .place,
+#plan-yuinou main .place,
+#plan-propose main .place {
+  font-size: 20px;
+  margin-bottom: 74px;
+}
+
+#plan-choose main .plan-include,
+#plan-small main .plan-include,
+#plan-reception main .plan-include,
+#plan-yuinou main .plan-include,
+#plan-propose main .plan-include {
+  background-image: url(../images/plan-bg.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 100px 0 100px 0;
+  margin-bottom: 100px;
+}
+
+#plan-choose main .plan-include h4,
+#plan-small main .plan-include h4,
+#plan-reception main .plan-include h4,
+#plan-yuinou main .plan-include h4,
+#plan-propose main .plan-include h4 {
+  margin: 0 auto 80px auto;
+  width: 600px;
+  font-size: 30px;
+  color: #bbad80;
+  border-bottom: 1px solid #000;
+  padding-bottom: 10px;
+}
+
+#plan-choose main .plan-include .plan-include-text,
+#plan-small main .plan-include .plan-include-text,
+#plan-reception main .plan-include .plan-include-text,
+#plan-yuinou main .plan-include .plan-include-text,
+#plan-propose main .plan-include .plan-include-text {
+  line-height: 2.5;
+}
+
+#plan-choose main .button,
+#plan-small main .button,
+#plan-reception main .button,
+#plan-yuinou main .button,
+#plan-propose main .button {
+  margin-bottom: 300px;
+}
+
+#plan-small main .price,
+#plan-reception main .price,
+#plan-yuinou main .price,
+#plan-propose main .price {
+  margin-bottom: 50px;
+}
+
+#plan-small main .members,
+#plan-reception main .members,
+#plan-yuinou main .members,
+#plan-propose main .members {
+  margin-bottom: 150px;
+}
+
+#plan-choose main .price {
+  margin-bottom: 10px;
+}
+
+#plan-choose main .members {
+  margin-bottom: 50px;
+}
+
+#plan-reception,
+#plan-propose {
+  line-height: 1.6;
+}
+
+#items main h1 {
+  font-size: 50px;
+}
+
+#items main h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#items main h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#items main .items-text-top {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+#items main .items-text-bottom {
+  text-align: center;
+  margin-bottom: 80px;
+  line-height: 1.6;
+}
+
+#items main .items-main-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto 100px auto;
+}
+
+#items main .items-main-image .items-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#items main .items-main-image .items-right-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#items main .items-direction-list {
+  background-image: url(../images/items-bg.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  margin-bottom: 300px;
+}
+
+#items main .items-direction-list h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #bbad80;
+  margin-top: 100px;
+  font-weight: bold;
+}
+
+#items main .items-direction-list .items-direction-inner {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+#items main .items-direction-list .items-direction-inner .direction {
+  height: 400px;
+  background-color: #ffffff;
+}
+
+#items main .items-direction-list .items-direction-inner .direction img {
+  margin-bottom: 20px;
+}
+
+#items main .items-direction-list .items-direction-inner .direction h5 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#items main .items-direction-list .items-direction-inner .direction p {
+  text-align: center;
+  color: #557788;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+#items main .items-direction-list .items-direction-inner .items-direction-list-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+#items main .items-direction-list .items-direction-inner .items-direction-list-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 126px;
+}
+
+#cuisine main h1 {
+  font-size: 50px;
+}
+
+#cuisine main h3 {
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+#cuisine main h4 {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+#cuisine main .cuisine-image {
+  height: 400px;
+  background-image: url(../images/cuisine-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+#cuisine main .cuisine-image .cuisine-main-text-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 140px;
+  width: 690px;
+  margin-top: 133px;
+  margin-left: 200px;
+}
+
+#cuisine main .cuisine-image .cuisine-main-text-inner .cuisine-main-text {
+  text-align: center;
+  line-height: 1.6;
+}
+
+#cuisine main .cuisine-explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 200px;
+}
+
+#cuisine main .cuisine-explanation .cuisine-explanation-left {
+  margin: auto 120px auto 0;
+}
+
+#cuisine main .cuisine-explanation .cuisine-explanation-left h2 {
+  font-size: 50px;
+}
+
+#cuisine main .cuisine-explanation .cuisine-explanation-left h3 {
+  margin-bottom: 60px !important;
+}
+
+#cuisine main .cuisine-explanation .cuisine-explanation-left .cuisine-explanation-text {
+  text-align: center;
+  line-height: 1.6;
+}
+
+#cuisine main .cuisine-explanation .cuisine-small-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 790px;
+}
+
+#cuisine main .cake-image {
+  height: 400px;
+  background-image: url(../images/cuisine-cake-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#cuisine main .cake-image .cake-main-text-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 140px;
+  width: 690px;
+  margin-top: 133px;
+  margin-right: 250px;
+}
+
+#cuisine main .cake-image .cake-main-text-inner .cake-main-text {
+  text-align: center;
+  line-height: 1.6;
+}
+
+#cuisine main .cake-explanation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 200px;
+}
+
+#cuisine main .cake-explanation .cake-small-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 790px;
+}
+
+#cuisine main .cake-explanation .cuisine-explanation-right {
+  margin: auto 0 auto 120px;
+}
+
+#cuisine main .cake-explanation .cuisine-explanation-right h2 {
+  font-size: 50px;
+}
+
+#cuisine main .cake-explanation .cuisine-explanation-right h3 {
+  margin-bottom: 60px !important;
+}
+
+#cuisine main .cake-explanation .cuisine-explanation-right .cake-explanation-text {
+  text-align: center;
+  line-height: 1.6;
+}
+
+#cuisine main .chef {
+  background-image: url(../images/cuisine-chef.jpg);
+  background-repeat: no-repeat;
+  width: 1400px;
+  height: 800px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: #ffffff;
+  overflow: hidden;
+  margin-bottom: 300px;
+  margin: 0 auto 300px auto;
+}
+
+#cuisine main .chef .chef-inner .chef-inner-top {
+  margin-top: 84px;
+  margin-left: 140px;
+}
+
+#cuisine main .chef .chef-inner .chef-inner-top h5 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#cuisine main .chef .chef-inner .chef-inner-top .chef-name {
+  font-size: 30px;
+  margin-bottom: 100px;
+}
+
+#cuisine main .chef .chef-inner .chef-text {
+  width: 720px;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+}
+
+#photo main h1 {
+  font-size: 50px;
+}
+
+#photo main h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#photo main .all {
+  margin-bottom: 300px;
+}
+
+#photo main .photo-gallery {
+  display: none;
+}
+
+#photo main img {
+  margin-bottom: 50px;
+}
+
+#photo main a:hover {
+  opacity: 0.6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#loadarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 1000px;
+  text-align: left;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+#loadarea span {
+  width: 300px;
+  text-align: left;
+}
+
+#loadarea img {
+  width: 300px;
+  text-align: left;
+}
+
+#loadmore {
+  margin: 20px auto 0 auto;
+  margin-top: 20px;
+  width: 400px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #bbad80;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+#access main h1 {
+  font-size: 50px;
+}
+
+#access main h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#access main .access-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1300px;
+  margin: 0 auto 200px auto;
+}
+
+#access main .access-list .access-button {
+  width: 400px;
+  height: 50px;
+  background-color: #bbad80;
+}
+
+#access main .access-list .access-button a {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+
+#access main .access-list .access-button i {
+  margin-left: 15px;
+}
+
+#access main .access-list .access-button:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#access main .access-zanpa {
+  width: 1100px;
+  margin: 0 auto 200px auto;
+}
+
+#access main .access-zanpa .access-zanpa-top {
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#access main .access-zanpa .access-zanpa-top .access-zanpa-text {
+  margin-left: 40px;
+}
+
+#access main .access-zanpa .access-zanpa-top .access-zanpa-text .logo {
+  margin-bottom: 30px;
+}
+
+#access main .access-zanpa .access-zanpa-top .access-zanpa-text .tel {
+  margin-bottom: 20px;
+}
+
+#access main .access-zanpa .access-zanpa-top .access-zanpa-text address {
+  margin-bottom: 20px;
+}
+
+#access main .access-zanpa .access-zanpa-top .access-zanpa-text .text-top {
+  margin-bottom: 20px;
+}
+
+#access main .access-plane,
+#access main .access-ship,
+#access main .access-car {
+  width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#access main .access-plane i,
+#access main .access-ship i,
+#access main .access-car i {
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 70px;
+  color: #557788;
+  margin-top: 70px;
+}
+
+#access main .access-plane h3,
+#access main .access-ship h3,
+#access main .access-car h3 {
+  width: 300px;
+  font-size: 30px;
+  color: #557788;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+  margin: 0 auto 30px auto;
+}
+
+#access main .access-plane h4,
+#access main .access-ship h4,
+#access main .access-car h4 {
+  text-align: center;
+  margin-bottom: 43px;
+  background-color: #bbad80;
+  height: 40px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+#access main .access-plane {
+  margin-bottom: 140px;
+}
+
+#access main .access-plane .access-plane-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#access main .access-plane .access-plane-inner h4 {
+  width: 540px;
+}
+
+#access main .access-plane .access-plane-inner .access-plane-inner-left {
+  text-align: center;
+}
+
+#access main .access-plane .access-plane-inner .access-plane-inner-right {
+  text-align: center;
+}
+
+#access main .access-plane .access-plane-inner .access-plane-inner-right h4 {
+  margin-bottom: 50px;
+}
+
+#access main .access-ship {
+  margin-bottom: 140px;
+}
+
+#access main .access-ship .access-ship-image {
+  text-align: center;
+}
+
+#access main .access-car {
+  margin-bottom: 300px;
+}
+
+#access main .access-car p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#access main .access-car ul {
+  text-align: center;
+}
+
+#access main .access-car ul li {
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+#contact main h1 {
+  font-size: 50px;
+}
+
+#contact main h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#contact main .form-all {
+  background-color: #f6f1e7;
+  width: 1000px;
+  margin: 0 auto 300px auto;
+  overflow: hidden;
+}
+
+#contact main .form-all form {
+  width: 800px;
+  margin: 50px auto 90px auto;
+}
+
+#contact main .form-all form input {
+  width: 800px;
+  height: 55px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+#contact main .form-all form textarea {
+  height: 300px;
+  width: 800px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 25px;
+}
+
+#contact main .form-all form .form-button-area {
+  text-align: center;
+}
+
+#contact main .form-all form .form-button-area .form-button {
+  background-color: #bbad80;
+  color: #ffffff;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+}
+
+#thanks main h1 {
+  font-size: 50px;
+}
+
+#thanks main h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+#thanks main .form-all {
+  background-color: #f6f1e7;
+  width: 1000px;
+  margin: 0 auto 300px auto;
+  overflow: hidden;
+}
+
+#thanks main p {
+  text-align: center;
+  margin-bottom: 100px;
+  line-height: 1.6;
+  margin-top: 150px;
+}
+
+#thanks main img {
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+}
+
+footer .footer-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 940px;
+  margin: 158px auto 32px auto;
+}
+
+footer .footer-right {
+  margin-left: 55px;
+  padding-right: 58px;
+  border-right: 1px solid #ffffff;
+}
+
+footer .footer-right .zanpa-hotel-engish {
+  font-size: 20px;
+}
+
+footer .footer-right .zanpa-hotel-japanese {
+  line-height: 1.6;
+}
+
+footer .footer-left {
+  line-height: 1.5;
+}
+
+footer .footer-icon {
+  width: 146px;
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+footer .footer-icon ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+footer .footer-icon ul a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .footer-icon ul a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer small p {
+  text-align: center;
+  margin-top: 103px;
+}
+
+.fotter-image img {
+  width: 100%;
+  height: 483px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

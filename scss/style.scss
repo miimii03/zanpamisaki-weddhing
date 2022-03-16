@@ -1,0 +1,1533 @@
+
+@import 'settings.scss';
+
+// ------------------------------------------------------------------
+// 　　　　　　　　　　　　　　　　全体構造
+// ------------------------------------------------------------------
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', '游明朝','Yu Mincho', '游明朝体', 'YuMincho','ＭＳ Ｐ明朝', 'MS PMincho', serif;
+  font-size: 16px;
+}
+
+.back-top {
+  position: fixed;
+  bottom: 3%;
+  right: 5%;
+  display: none;
+  a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: $main-color;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 20px;
+  }
+}
+
+
+// ------------------------------------------------------------------
+// 　　　　　　　　　　　　　　　　　ヘッダー
+// ------------------------------------------------------------------
+
+
+// -------------------トップページ-------------------
+
+
+header {
+  background-color: rgba(255,255,255,0.85);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  .nav-all {
+    @include flex-between;
+    align-items: center;
+    p {
+      color: $accent-color;
+    }
+    .hamburger {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .nav-sub {
+      display: flex;
+      .nav-sub-left {
+        display: flex;
+        li {
+          line-height: 60px;
+        }
+        i {
+          font-size: 30px;
+          margin-right: 5px;
+          position: relative;
+          top: 5px;
+        }
+        a {
+          text-decoration: none;
+          color: $main-color;
+          margin-right: 15px;
+        }
+      }
+      .nav-sub-right {
+        display: flex;
+        .fair {
+          background-color: $accent-color;
+          width: 100px;
+          text-align: center;
+          line-height: 60px;
+        }
+        .contact {
+          background-color: $main-color;
+          width: 130px;
+          text-align: center;
+          line-height: 60px;
+        }
+        a {
+          color: #ffffff !important; 
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+.hamburger-nav {
+  background-image: url(../images/hamburger-img.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  background-size: cover;
+  ul {
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    .hamburger-top {
+      display: flex;
+    }
+    .hamburger-bottom {
+      display: flex;
+    }
+    li{
+      width: 200px;
+      height: 60px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      a {
+        display: block;
+        text-decoration: none;
+        color: $main-color;
+        line-height: 1.6;
+      }
+      .hamburger-english {
+        font-family: $english;
+        font-size: 20px;
+      }
+      .hamburger-ja {
+        color: $accent-color;
+      }
+    }
+    li:hover {
+      background-color: $background-color;
+    }
+  }
+}
+
+
+
+
+
+
+#home {
+  main {
+    .home-header-image img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      margin-bottom: 300px;
+    }
+  }
+}
+
+#ceremony-style,
+#events,
+#hall,
+#hall-precious,
+#hall-royal,
+#hall-rafale,
+#plan,
+#plan-choose,
+#plan-small,
+#plan-reception,
+#plan-yuinou,
+#plan-propose,
+#items,
+#cuisine,
+#photo,
+#access,
+#contact,
+#thanks {
+  main {
+    .home-header-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
+// ------------------------------------------------------------------
+// 　　　　　　　　　　　　　　　　メイン
+// ------------------------------------------------------------------
+main {
+  .midashi-english {
+    @include center-bottom (10px);
+    font-family: $english;
+    color: $main-color;
+  }
+  .button {
+    background-color: $main-color;
+    width: 400px;
+    height: 50px;
+    margin: 0 auto 0 auto;
+    a {
+      display: block;
+      text-decoration: none;
+      color: #ffffff;
+      text-align: center;
+      line-height: 50px;
+    }
+  }
+  .number-of-people {
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid $main-color;
+    color: $main-color;
+    margin: 0 auto 30px auto;
+    font-weight: bold;
+  }
+
+}
+#home,
+#ceremony-style,
+#events,
+#plan-choose,
+#plan-small,
+#plan-reception,
+#plan-yuinou,
+#plan-propose,
+#items,
+#cuisine,
+#photo {
+  .button:hover {
+    opacity: 0.6;
+    transition: 0.5s; //ふわっと
+  }
+}
+
+#hall,
+#hall-precious,
+#hall-royal,
+#hall-rafale,
+#plan {
+  .button:hover {
+    background-color: #DCD3B5;
+    transition: 0.5s; //ふわっと
+  }
+}
+
+// ------------------トップページ-------------------
+
+
+#home {
+  main {
+    h2 {
+      font-size: 40px;
+    }
+    h3 {
+      text-align: center;
+    }
+    .button {
+      margin-bottom: 200px;
+    }
+    .home-header-text {
+      text-align: center;
+      height: 737px;
+      background-image: url(../images/home-bg-text.png);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      h1 {
+        font-size: 30px;
+        color: $main-color;
+        margin-bottom: 55px;
+      }
+      .top {
+        margin-bottom: 30px;
+        line-height: 1.6;
+      }
+      .under {
+        margin-bottom: 380px;
+        line-height: 1.6;
+      }
+    }
+    .home-ceremony-style {
+      h3 {
+        margin-bottom: 60px;
+      }
+      ul {
+        width: 1340px;
+        @include flex-between;
+        list-style-type: none;
+        margin: 0 auto 70px auto;
+        img {
+          transition: 0.5s;
+        }
+        img:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .home-events {
+      background-image: url(../images/home-bg-events.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      margin-bottom: 450px;
+      h2 {
+        margin-top: 80px;
+      }
+      h3 {
+        margin-bottom: 70px;
+      }
+      ul {
+        width: 860px;
+        @include flex-between;
+        margin: 0 auto 90px auto;
+        li {
+          list-style-type: none;
+          a:hover {
+            opacity: 0.7;
+            transition: 0.5s;
+          }
+        }
+      }
+    }
+    .home-bg{
+      background-image: url(../images/home-bg-color.png);
+      background-repeat: repeat-x;
+      background-position: bottom;
+      margin-bottom: 450px;
+      height: 644px;
+      .home-content-image {
+        max-width: 1130px; /* 最大幅 */
+        min-width: 300px; /* 最小幅 */
+        img {
+          width: 100%;
+          height: 480px;
+          object-fit: cover;
+        }
+      }
+      .home-hall,
+      .home-plan,
+      .home-items,
+      .home-cuisine{
+        display: flex;
+        align-items: center;
+        margin-top: -300px;
+        .home-flex {
+          margin: auto auto;
+          h2 {
+            margin-top: 257px;
+          }
+          h3 {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+    .home-photo {
+      margin: 0 auto 300px auto;
+      width: 1000px;
+      h3 {
+        margin-bottom: 70px;
+      }
+      .home-photo-gallery-top {
+        @include flex-between-bottom (50px);
+      }
+      .home-photo-gallery-bottom {
+        @include flex-between-bottom (100px);
+      }
+    }
+  }
+}
+
+
+// ------------------挙式スタイル-------------------
+
+#ceremony-style {
+  main {
+    h2 {
+      font-size: 40px;
+    }
+    h3,
+    h4,
+    h5,
+    .ceremony-style-text-top {
+      @include center-bottom(30px);
+      line-height: 1.6
+    }
+    h5 {
+      margin-top: 70px;
+    }
+    .ceremony-style-text-bottom {
+      @include center-bottom(60px);
+      line-height: 1.6
+    }
+    h4 {
+      font-size: 30px;
+    }
+    .ceremony-style-list {
+      margin-bottom: 300px;
+      img {
+        transition: 0.5s;
+      }
+      img:hover {
+        opacity: 0.5;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        margin-bottom: 70px;
+      }
+      ul {
+        @include flex-between;
+        width: 1340px;
+        margin: 0 auto;
+        li {
+          list-style-type: none;
+        }
+      }
+    }
+    .ceremony-flex-right {
+      display: flex;
+      height: 520px;
+      .ceremony-two-image-right {
+        @include flex-between;
+        width: 620px;
+        margin: 60px 60px 50px 20px;
+      }
+    }
+    .ceremony-flex-left {
+      display: flex;
+      height: 520px;
+      .ceremony-two-image-left {
+        @include flex-between;
+        width: 620px;
+        margin: 60px 20px 50px 60px;
+      }
+    }
+    .ceremony-flex-image-big {
+      width: 100%;
+      object-fit: cover;
+    }
+    .ceremony-style-chapel,
+    .ceremony-style-shinto,
+    .ceremony-style-garden {
+      margin-bottom: 230px;
+      overflow: hidden;
+    }
+    .ceremony-style-beach {
+      margin-bottom: 300px;
+    }
+  }
+}
+
+// -------------------フェア＆イベント-------------------
+
+#events {
+  main {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    h3 {
+      @include center-bottom(60px);
+    }
+    h4 {
+      @include center-bottom(20px);
+    }
+    h2 {
+      @include center-bottom(60px);
+      font-size: 30px;
+      color: $main-color;
+    }
+    p {
+      text-align: center;
+      width: 600px;
+    }
+    .events-bg {
+      background-image: url(../images/home-bg-color.png);
+      background-repeat: repeat-x;
+      background-position: bottom;
+      margin-bottom: 200px;
+      height: 651px;
+    }
+    .events-text-top {
+      margin-bottom: 30px;
+    }
+    .events-kengaku {
+      padding-top: 70px;
+      width: 1334px;
+      display: flex;
+      margin: 0 auto;
+      .events-kengkau-text {
+        margin: 80px auto auto 100px;
+        line-height: 1.6;
+      }
+    }
+    .events-yuinou {
+      padding-top: 70px;
+      width: 1334px;
+      display: flex;
+      margin: 0 auto;
+      .events-yuinou-text {
+        margin: 80px 100px auto auto;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+// -------------------披露宴会場-------------------
+
+#hall {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    h3 {
+      @include center-bottom(100px);
+    }
+    h2 {
+      font-size: 40px;
+      color: $accent-color;
+      margin-bottom: 30px;
+    }
+    p {
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    .hall-precious {
+      background-image: url(../images/hall-bg-precious.jpg);
+      @include hall-main;
+    }
+    .hall-royal {
+      background-image: url(../images/hall-bg-royal.jpg);
+      @include hall-main
+    }
+    .hall-rafale {
+      background-image: url(../images/hall-bg-rafale.jpg);
+      @include hall-main
+    }
+    .hall-flex-right {
+      width: 540px;
+      text-align: center;
+      margin-top: 70px;
+      margin-right: 40px;
+      margin-left: 300px;
+    }
+    .hall-flex-left {
+      width: 540px;
+      text-align: center;
+      margin-top: 70px;
+      margin-left: 40px;
+      margin-right: 300px;
+    }
+    .button {
+      margin-top: 450px;
+    }
+    .hall-small-image {
+      @include flex-between;
+      width: 430px;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+// -------------------披露宴会場詳細の統一部分-------------------
+
+
+
+.holl-content {
+  main {
+    h1 {
+      @include center-bottom(10px);
+      font-size: 50px;
+      color: $accent-color;
+    }
+    h4 {
+      @include center-bottom(30px);
+    }
+    h3 {
+      @include center-bottom(40px);
+      font-size: 25px;
+    }
+    .number-of-people {
+      margin-bottom: 40px;
+    }
+    .hall-presious-text-top {
+      @include center-bottom (30px);
+      line-height: 1.6;
+    }
+    .hall-presious-text-bottom {
+      @include center-bottom (60px);
+      line-height: 1.6;
+    }
+    .hall-main-image {
+      width: 1200px;
+      margin: 0 auto 100px auto;
+      .hall-main-image-top {
+        @include flex-between-bottom (15px);
+      }
+      .hall-main-image-bottom {
+        @include flex-between;
+      }
+    }
+    .hall-main-charm {
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      margin-bottom: 300px;
+      h2 {
+        @include center-bottom(70px);
+        font-size: 40px;
+        color: $main-color;
+        margin-top: 70px;
+      }
+      .hall-main-charm-inner {
+        @include flex-between;
+        margin: 0 auto 100px auto;
+        h5 {
+          font-size: 30px;
+        }
+        img {
+          margin-bottom: 15px;
+        }
+        p {
+          text-align: center;
+          line-height: 1.6;
+        }
+      }
+      .button {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}
+
+
+
+// -------------------プレシャスホール-------------------
+
+#hall-precious {
+  main {
+    .hall-main-charm {
+    background-image: url(../images/hall-precious-bg-charm.jpg);
+    background-attachment: fixed;
+    }
+    .hall-main-charm-inner {
+      width: 1144px;
+    }
+    .hall-main-charm-left,
+      .hall-main-charm-center {
+        h6 {
+          @include center-bottom(94px);
+          color: $accent-color;
+        }
+      }
+      .hall-main-charm-right {
+        h6 {
+          line-height: 1.6;
+          @include center-bottom(30px);
+          color: $accent-color;
+        }
+      }
+  }
+}
+
+
+
+// -------------------ロイヤルホール-------------------
+
+#hall-royal {
+  main {
+    .hall-main-charm {
+      background-image: url(../images/hall-royal-bg-charm.jpg);
+      background-attachment: fixed;
+    }
+    .hall-main-charm-inner {
+      width: 746px;
+    }
+    .hall-main-charm-left {
+        h6 {
+          @include center-bottom(50px);
+          color: $accent-color;
+          line-height: 1.6;
+        }
+      }
+      .hall-main-charm-right {
+        h6 {
+          @include center-bottom(84px);
+          color: $accent-color;
+        }
+      }
+  }
+}
+
+// -------------------ラファール-------------------
+
+#hall-rafale {
+  main {
+    .hall-main-charm {
+      background-image: url(../images/hall-rafale-bg-charm.jpg);
+      background-attachment: fixed;
+    }
+    .hall-main-charm-inner {
+      width: 756px;
+    }
+    .hall-main-charm-left {
+        h6 {
+          @include center-bottom(50px);
+          color: $accent-color;
+          line-height: 1.6;
+        }
+      }
+      .hall-main-charm-right {
+        h6 {
+          @include center-bottom(52px);
+          color: $accent-color;
+          line-height: 1.6;
+        }
+      }
+  }
+}
+
+
+
+// -------------------プラン-------------------
+
+
+#plan {
+  main {
+    h1 {
+      font-size: 50px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      @include center-bottom(100px);
+    }
+
+    // ----------背景画像----------
+    .plan-choose {
+      @include plan-bg-img;
+      background-image: url(../images/plan-choose-bg.jpg);
+    }
+    .plan-small {
+      @include plan-bg-img;
+      background-image: url(../images/plan-small-bg.jpg);
+    }
+    .plan-reception {
+      @include plan-bg-img;
+      background-image: url(../images/plan-reception-bg.jpg);
+    }
+    .plan-yuinou {
+      @include plan-bg-img;
+      background-image: url(../images/plan-yuinou-bg.jpg);
+    }
+    .plan-propose {
+      @include plan-bg-img;
+      background-image: url(../images/plan-propose-bg.jpg);
+
+    }
+    // -----------------------------
+
+    .plan-choose,
+    .plan-reception,
+    .plan-propose {
+      overflow: hidden;
+      .plan-content-inner {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        .plan-image-left {
+          margin-left: 200px;
+        }
+        .plan-text-right {
+          text-align: center;
+          height: 335px;
+          margin-left: 100px;
+          h3 {
+            margin-bottom: 10px;
+            font-size: 40px;
+            color: $accent-color;
+          }
+          h4 {
+            margin-bottom: 50px;
+          }
+          .price {
+            font-size: 30px;
+          }
+          .price-sub {
+            @include center-bottom (30px);
+          }
+          .members {
+            font-size: 30px;
+            margin-bottom: 60px;
+          }
+        }
+      }
+    }
+    .plan-small,
+    .plan-yuinou {
+      overflow: hidden;
+      .plan-content-inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 20px;
+        .plan-image-right{
+          margin-right: 200px;
+        }
+        .plan-text-left {
+          height: 335px;
+          margin-right: 165px;
+          text-align: center;
+          h3 {
+            margin-bottom: 10px;
+            font-size: 40px;
+            color: $accent-color;
+          }
+          h4 {
+            margin-bottom: 50px;
+          }
+          .price {
+            font-size: 30px;
+            margin-bottom: 50px;
+          }
+          .members {
+            font-size: 30px;
+            margin-bottom: 60px;
+          }
+          .plan-image-right {
+            margin-right: 200px;
+          }
+        }
+      }
+    }
+    .plan-reception,
+    .plan-propose {
+      .price {
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
+// -------------------プランの詳細ページ-------------------
+
+
+#plan-choose,
+#plan-small,
+#plan-reception,
+#plan-yuinou,
+#plan-propose {
+  main {
+    text-align: center;
+    span {
+      font-weight: bold;
+      margin-right: 20px;
+      color: $accent-color;
+      font-size: 20px;
+      background-color: $background-color;
+      padding: 5px 10px 5px 10px;
+    }
+    h1 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      color: $accent-color;
+    }
+    h2 {
+      font-size: 20px;
+      margin-bottom: 180px;
+    }
+    h3 {
+      margin: 0 auto 70px auto;
+      width: 500px;
+      font-size: 30px;
+      color: $main-color;
+      border-bottom: 1px solid #000;
+      padding-bottom: 10px;
+    }
+    .price {
+      font-size: 25px;
+    }
+    .price-sub {
+      margin-bottom: 40px;
+    }
+    .members {
+      font-size: 25px;
+      
+    }
+    .place {
+      font-size: 20px;
+      margin-bottom: 74px;
+    }
+    .plan-include {
+      background-image: url(../images/plan-bg.png);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      padding: 100px 0 100px 0;
+      margin-bottom: 100px;
+      h4 {
+        margin: 0 auto 80px auto;
+        width: 600px;
+        font-size: 30px;
+        color: $main-color;
+        border-bottom: 1px solid #000;
+        padding-bottom: 10px;
+      }
+      .plan-include-text {
+        line-height: 2.5;
+      }
+    }
+    .button {
+      margin-bottom: 300px;
+    }
+  }
+}
+#plan-small,
+  #plan-reception,
+  #plan-yuinou,
+  #plan-propose {
+    main {
+      .price {
+        margin-bottom: 50px;
+      }
+      .members {
+        margin-bottom: 150px;
+      }
+    }
+  }
+
+#plan-choose {
+  main {
+    .price {
+      margin-bottom: 10px;
+    }
+    .members {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+#plan-reception,
+#plan-propose {
+  line-height: 1.6;
+}
+
+
+
+// -------------------アイテム＆演出-------------------
+
+#items {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      @include center-bottom(25px);
+    }
+    h3 {
+      font-size: 30px;
+      @include center-bottom(30px);
+    }
+    .items-text-top {
+      @include center-bottom (30px);
+      line-height: 1.6;
+    }
+    .items-text-bottom {
+      @include center-bottom (80px);
+      line-height: 1.6;
+    }
+    .items-main-image {
+      @include flex-between;
+      width: 1400px;
+      margin: 0 auto 100px auto;
+      .items-right {
+        @include flex-between;
+        flex-direction: column;
+      }
+      .items-right-bottom {
+        @include flex-between
+      }
+    }
+    .items-direction-list {
+      background-image: url(../images/items-bg.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: cover;
+      overflow: hidden;
+      margin-bottom: 300px;
+      h4 {
+        font-size: 30px;
+        @include center-bottom(100px);
+        color: $main-color;
+        margin-top: 100px;
+        font-weight: bold;
+      }
+      .items-direction-inner {
+        width: 1170px;
+        margin: 0 auto;
+        .direction {
+          height: 400px;
+          background-color: #ffffff;
+          img {
+            margin-bottom: 20px;
+          }
+          h5 {
+            font-size: 30px;
+            margin-bottom: 20px;
+          }
+          p {
+            text-align: center;
+            color: $accent-color;
+            font-size: 20px;
+            line-height: 1.6;
+          }
+        }
+        .items-direction-list-top {
+          @include flex-between;
+          margin-bottom: 50px;
+        }
+        .items-direction-list-bottom {
+          @include flex-between;
+          margin-bottom: 126px;
+        }
+      }
+    }
+  }
+}
+
+
+// -------------------お料理＆ケーキ-------------------
+
+#cuisine {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    h3 {
+      @include center-bottom(150px);
+    }
+    h4 {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    .cuisine-image {
+      height: 400px;
+      background-image: url(../images/cuisine-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      overflow: hidden;           //飛び出し防止
+      .cuisine-main-text-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 140px;
+        width: 690px;
+        margin-top: 133px;
+        margin-left: 200px;
+        .cuisine-main-text {
+          text-align: center;
+          line-height: 1.6;
+        }
+      }
+    }
+    .cuisine-explanation {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 200px;
+      .cuisine-explanation-left {
+        margin: auto 120px auto 0;
+        h2 {
+          font-size: 50px;
+        }
+        h3 {
+          margin-bottom: 60px !important;
+        }
+        .cuisine-explanation-text {
+          text-align: center;
+          line-height: 1.6;
+        }
+      }
+      .cuisine-small-image {
+        @include flex-between;
+        width: 790px;
+      }
+    }
+
+
+    .cake-image {
+      height: 400px;
+      background-image: url(../images/cuisine-cake-bg.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: flex-end;
+      .cake-main-text-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 140px;
+        width: 690px;
+        margin-top: 133px;
+        margin-right: 250px;
+        .cake-main-text {
+          text-align: center;
+          line-height: 1.6;
+        }
+      }
+    }
+    .cake-explanation {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 200px;
+      .cake-small-image {
+        @include flex-between;
+        width: 790px;
+      }
+      .cuisine-explanation-right {
+        margin: auto 0 auto 120px;
+        h2 {
+          font-size: 50px;
+        }
+        h3 {
+          margin-bottom: 60px !important;
+        }
+        .cake-explanation-text {
+          text-align: center;
+          line-height: 1.6;
+        }
+      }
+    }
+    .chef {
+      background-image: url(../images/cuisine-chef.jpg);
+      background-repeat: no-repeat;
+      width: 1400px;
+      height: 800px;
+      object-fit: cover;
+      color: #ffffff;
+      overflow: hidden;
+      margin-bottom: 300px;
+      margin: 0 auto 300px auto;
+      .chef-inner {
+        .chef-inner-top {
+          margin-top: 84px;
+          margin-left: 140px;
+          h5 {
+            font-size: 50px;
+            margin-bottom: 10px;
+          }
+          .chef-name {
+            font-size: 30px;
+            margin-bottom: 100px;
+          }
+        }
+        .chef-text {
+          width: 720px;
+          font-size: 20px;
+          line-height: 2;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+
+
+// -------------------フォトギャラリー-------------------
+
+#photo {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      @include center-bottom(100px);
+    }
+    .all {
+      margin-bottom: 300px;
+    }
+    .photo-gallery {
+      display: none;
+    }
+    img {
+      margin-bottom: 50px;
+    }
+    a:hover {
+      opacity: 0.6;
+      transition: 0.5s;
+    }
+  
+  }
+}
+
+
+
+// -------もっと見るbutton-------
+
+#loadarea {
+  @include flex-between;
+      margin: 0 auto;
+      width: 1000px;
+      text-align: left;
+      flex-wrap: wrap;
+      align-content: space-between;
+  }
+  #loadarea span {
+      width: 300px;
+      text-align: left;
+  }
+  #loadarea img {
+      width: 300px;
+      text-align: left;
+  }
+  #loadmore {
+    margin: 20px auto 0 auto;
+      margin-top: 20px;
+      width: 400px;
+      height: 50px;
+      line-height: 50px;
+      display: block;
+      background: $main-color;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+  }
+ 
+
+
+
+// -------------------アクセス-------------------
+
+#access {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      @include center-bottom(80px);
+    }
+    .access-list {
+      @include flex-between;
+      width: 1300px;
+      margin: 0 auto 200px auto;
+      .access-button {
+        width: 400px;
+        height: 50px;
+        background-color: $main-color;
+        a {
+          display: block;
+          text-decoration: none;
+          color: #ffffff;
+          text-align: center;
+          line-height: 50px;
+        }
+        i {
+          margin-left: 15px;
+        }
+      }
+      .access-button:hover {
+        opacity: 0.8;
+        transition: 0.5s;
+      }
+    }
+    .access-zanpa {
+      width: 1100px;
+      margin: 0 auto 200px auto;
+      .access-zanpa-top {
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        .access-zanpa-text {
+          margin-left: 40px;
+          .logo {
+            margin-bottom: 30px;
+          }
+          .tel {
+            margin-bottom: 20px;
+          }
+          address {
+            margin-bottom: 20px;
+          }
+          .text-top {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+    .access-plane,
+    .access-ship,
+    .access-car {
+      width: 1100px;
+      margin: 0 auto;
+      overflow: hidden;
+      i {
+        @include center-bottom (20px);
+        display: block;
+        font-size: 70px;
+        color: $accent-color;
+        margin-top: 70px;
+      }
+      h3 {
+        width: 300px;
+        font-size: 30px;
+        color: $accent-color;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+        margin: 0 auto 30px auto;
+      }
+      h4 {
+        @include center-bottom (43px);
+        background-color: $main-color;
+        height: 40px;
+        line-height: 40px;
+        color: #ffffff;
+      }
+    }
+    .access-plane {
+      margin-bottom: 140px;
+      .access-plane-inner {
+        @include flex-between;
+        h4 {
+          width: 540px;
+        }
+        .access-plane-inner-left {
+          text-align: center;
+        }
+        .access-plane-inner-right {
+          text-align: center;
+          h4 {
+            margin-bottom: 50px;
+          }
+        }
+      }
+    }
+    .access-ship {
+      margin-bottom: 140px;
+      .access-ship-image {
+        text-align: center;
+      }
+    }
+    .access-car {
+      margin-bottom: 300px;
+      p {
+        @include center-bottom (30px);
+      }
+      ul {
+        text-align: center;
+        li {
+          list-style-type: none;
+          line-height: 1.6;
+        }
+      }
+    }
+  }
+}
+
+
+// -------------------お問い合わせ-------------------
+
+#contact {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      @include center-bottom(100px);
+    }
+    .form-all {
+      background-color: $background-color;
+        width: 1000px;
+        margin: 0 auto 300px auto;
+        overflow: hidden;
+      form {
+        width: 800px;
+        margin: 50px auto 90px auto;
+        input {
+          width: 800px;
+          height: 55px;
+          border: none;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          font-size: 25px;
+        }
+        textarea {
+          height: 300px;
+          width: 800px;
+          border: none;
+          margin-top: 20px;
+          margin-bottom: 50px;
+          font-size: 25px;
+        }
+        .form-button-area {
+          text-align: center;
+          .form-button {
+            background-color: $main-color;
+            color: #ffffff;
+            width: 300px;
+            height: 50px;
+            margin: 0 auto;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// -------------------お問い合わせ 送信完了-------------------
+
+#thanks {
+  main {
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      @include center-bottom(100px);
+    }
+    .form-all {
+      background-color: $background-color;
+      width: 1000px;
+      margin: 0 auto 300px auto;
+      overflow: hidden;
+    }
+    p {
+      @include center-bottom (100px);
+      line-height: 1.6;
+      margin-top: 150px;
+    }
+    img {
+      display: block;
+      margin: 0 auto 50px auto;
+    }
+  }
+}
+
+
+
+
+// ------------------------------------------------------------------
+// 　　　　　　　　　　　　　　　　　フッター
+// ------------------------------------------------------------------
+
+footer {
+  position: absolute;
+  width: 100%;
+  color: #ffffff;
+  .footer-text {
+    @include flex-between;
+    width: 940px;
+    margin: 158px auto 32px auto;
+  }
+  .footer-right {
+    margin-left: 55px;
+    padding-right: 58px;
+    border-right: 1px solid #ffffff;
+    .zanpa-hotel-engish {
+      font-size: 20px;
+    }
+    .zanpa-hotel-japanese {
+      line-height: 1.6;
+    }
+  }
+  .footer-left {
+    line-height: 1.5;
+  }
+  .footer-icon {
+    width: 146px;
+    font-size: 50px;
+    margin: 0 auto;
+    ul {
+      @include flex-between;
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        color: rgba(255,255,255,0.7);
+      }
+      a:hover {
+        color: rgba(255,255,255,0.5);
+        transition: 0.5s; //ふわっと
+      }
+    }
+  }
+  small {
+    p {
+      text-align: center;
+      margin-top: 103px;
+    }
+  }
+}
+.fotter-image {
+  img {
+    width: 100%;
+    height: 483px;
+    object-fit: cover;
+  }
+}
